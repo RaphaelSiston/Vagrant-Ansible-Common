@@ -1,4 +1,4 @@
-name: build and push  
+name: tasks pipeline  
 
 
 on:
@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  build-and-push-ci-cd:
+  build-and-push:
     runs-on: ubuntu-latest
 
     steps:

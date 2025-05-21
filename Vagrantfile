@@ -10,6 +10,7 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder "ansible/", "/ansible"
   config.vm.provision "shell", inline: <<-SHELL
   apt update
+  apt install net-tools -y 
   apt install ansible -y
   hostnamectl set-hostname Projeto03
   ansible-playbook --connection=local /ansible/playbook.yml

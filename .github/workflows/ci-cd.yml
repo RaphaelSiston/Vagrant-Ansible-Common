@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  build-and-push:
+  build-and-push-ci-cd:
     runs-on: ubuntu-latest
 
     steps:
